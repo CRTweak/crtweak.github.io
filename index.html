@@ -54,7 +54,7 @@ body {
 }
 </style>
 <audio id="ma">
-  <source src="ma.ogg" type="audio/ogg">
+  <source src="ma.ogg" preload = "auto">
 </audio>
  
 <center 
@@ -64,7 +64,7 @@ body {
  font-size: 48px;
  font-family:'greater-determination-sans'">
  
- You need the <span><button onclick="playAudio()" type="button">___</button></span>.
+ You need the <button onclick="playAudio()" type="button">___</button>.
 </center>
 <script>
  var x = document.getElementById("ma"); 
