@@ -1,0 +1,11 @@
+
+<img src="sound-button.png" alt="Play sound" id="soundImage" style="cursor:pointer; width:128px; height:auto;">
+<audio id="soundEffect" src="click-sound.mp3"></audio>
+
+<script>
+  document.getElementById('soundImage').addEventListener('click', function() {
+    var audio = document.getElementById('soundEffect');
+    audio.currentTime = 0; // rewind to start
+    audio.play();
+  });
+</script>
